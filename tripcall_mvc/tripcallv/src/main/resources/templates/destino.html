@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="icon" type="icon" href="../imagens/Principal/favicon-16x16.png">
+  <style>
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <title>Destino</title>
+</head>
+
+<body>
+  <!----------------------------------------------------INICIO BARRA DE NAVEGAÇÃO-------------------------------------------------------->
+  <header role="banner">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4" style="background-color: #0a1121;">
+      <div class="container">
+        <a class="navbar-brand" href="http://localhost:9090/home"><img style="width: 90px;"
+            src="../imagens/Principal/imglogo/logop.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://localhost:9090/home">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:9090/home/destino">Destino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link promocoes " href="http://localhost:9090/home/promocao">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contato " href="http://localhost:9090/home/contato">Contato</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="http://localhost:9090/home/login">Entrar</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Procure sua viajem" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-------------------------------------------FIM DA BARRA DE NAVEGAÇÃO--------------------------------------------------------------->
+  <!-------------------------------------------INICIO CONTEUDO PRINCIPAL---------------------------------------------------------------->
+  <main style="background-color:#fff ;" role="main">
+    <div class="container">
+      <!------------------------------------------------INICIO BOTÕES DE BUSCA--------------------------------------------------------------------->
+      <div style="display:flex; flex-wrap:wrap;">
+        <div class="btn-group" role="group" style="margin-right:5px;">
+          <button type="button" class="btn dropdown-toggle text-dark" data-bs-toggle="dropdown"
+            aria-expanded="false">Destinos</button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="#">Rio de janeiro</a></li>
+            <li><a class="dropdown-item" href="#">Estados Unidos</a></li>
+            <li>
+            <li><a class="dropdown-item" href="#">Fortaleza</a></li>
+            <li><a class="dropdown-item" href="#">Amsterdã</a></li>
+            <li><a class="dropdown-item" href="#">Italia</a></li>
+            <li><a class="dropdown-item" href="#">Peru</a></li>
+            <li><a class="dropdown-item" href="#">França</a></li>
+          </ul>
+        </div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Hoteis</button></a></div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Restaurantes</button></a>
+        </div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Pousadas</button></a>
+        </div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Forums de
+              viagem</button></a></div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Aluguéis de
+              Temporada</button></a></div>
+      </div>
+      <!------------------------------------------------FIM BOTÕES DE BUSCA--------------------------------------------------------------------->
+      <hr>
+    
+      <h2>Destinos✈️</h2>
+      <!----------------------------------------------INICIO CARDS DESTINO------------------------------------------------------------------->
+      <div class="card-group mt-5">
+        <div class="card">
+          <img src="../imagens/destino/imgcard/gramado1.jpg" class="card-img-top h-50" alt="imagem Gramado">
+          <div class="card-body">
+            <a class="text-dark" href="">
+              <h5 class="card-title">Gramado RS</h5>
+            </a>
+            <div style="display:flex ;"><img style="height:25px ;" src="../imagens/Principal/coracao-status.png"
+                alt="Imagem Coração">
+              <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+            </div>
+            <p class="card-text">De <s>R$150</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);"> -20%
+              </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                style="color:rgb(255, 77, 0);font-size: 30px;">120</strong></p>
+            <div style="display:flex;">
+              <p
+                style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                8.0</p>
+              <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+            </div>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../imagens/destino/imgcard/new-york.jpg" class="card-img-top h-50" alt="...">
+          <div class="card-body">
+            <a class="text-dark" href="">
+              <h5 class="card-title">NY Estados Unidos</h5>
+            </a>
+            <div style="display:flex ;"><img style="height:25px ;" src="../imagens/Principal/coracao-status.png"
+                alt="Imagem Coração">
+              <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+            </div>
+            <p class="card-text">De <s>R$150</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);"> -20%
+              </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                style="color:rgb(255, 77, 0);font-size: 30px;">120</strong></p>
+            <div style="display:flex;">
+              <p
+                style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                8.0</p>
+              <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+            </div>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../imagens/destino/imgcard/rio 2.jpg" class="card-img-top h-50" alt="...">
+          <div class="card-body">
+            <a class="text-dark" href="">
+              <h5 class="card-title">Rio de Janeiro</h5>
+            </a>
+            <div style="display:flex ;"><img style="height:25px ;" src="../imagens/Principal/coracao-status.png"
+                alt="Imagem Coração">
+              <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+            </div>
+            <p class="card-text">De <s>R$150</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);"> -20%
+              </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                style="color:rgb(255, 77, 0);font-size: 30px;">120</strong></p>
+            <div style="display:flex;">
+              <p
+                style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                8.0</p>
+              <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+            </div>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-group mt-2">
+        <div class="card">
+          <img src="../imagens/destino/imgcard/paris.jpg" class="card-img-top h-50" alt="imagem paris">
+          <div class="card-body">
+            <a class="text-dark" href="">
+              <h5 class="card-title">Paris</h5>
+            </a>
+            <div style="display:flex ;"><img style="height:25px ;" src="../imagens/Principal/coracao-status.png"
+                alt="Imagem Coração">
+              <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+            </div>
+            <p class="card-text">De <s>R$150</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);"> -20%
+              </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                style="color:rgb(255, 77, 0);font-size: 30px;">120</strong></p>
+            <div style="display:flex;">
+              <p
+                style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                8.0</p>
+              <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+            </div>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../imagens/destino/imgcard/vietnã.jpg" class="card-img-top h-50" alt="imagem vietnã">
+          <div class="card-body">
+            <a class="text-dark" href="">
+              <h5 class="card-title">Vietnã</h5>
+            </a>
+            <div style="display:flex ;"><img style="height:25px ;" src="../imagens/Principal/coracao-status.png"
+                alt="Imagem Coração">
+              <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+            </div>
+            <p class="card-text">De <s>R$150</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);"> -20%
+              </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                style="color:rgb(255, 77, 0);font-size: 30px;">120</strong></p>
+            <div style="display:flex;">
+              <p
+                style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                8.0</p>
+              <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+            </div>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../imagens/destino/imgcard/fortaleza.jpg" class="card-img-top" alt="imagem fortaleza">
+          <div class="card-body">
+            <a class="text-dark" href="">
+              <h5 class="card-title">Fortaleza</h5>
+            </a>
+            <div style="display:flex ;"><img style="height:25px ;" src="../imagens/Principal/coracao-status.png"
+                alt="Imagem Coração">
+              <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+            </div>
+            <p class="card-text">De <s>R$150</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);"> -20%
+              </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                style="color:rgb(255, 77, 0);font-size: 30px;">120</strong></p>
+            <div style="display:flex;">
+              <p
+                style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                8.0</p>
+              <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+            </div>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-group mt-2">
+        <div class="card">
+          <img src="../imagens/destino/imgcard/machu-picchu peru.jpg" class="card-img-top h-50" alt="imagem peru">
+          <div class="card-body">
+            <a class="text-dark" href="">
+              <h5 class="card-title">Peru</h5>
+            </a>
+            <div style="display:flex ;"><img style="height:25px ;" src="../imagens/Principal/coracao-status.png"
+                alt="Imagem Coração">
+              <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+            </div>
+            <p class="card-text">De <s>R$150</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);"> -20%
+              </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                style="color:rgb(255, 77, 0);font-size: 30px;">120</strong></p>
+            <div style="display:flex;">
+              <p
+                style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                8.0</p>
+              <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+            </div>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../imagens/destino/imgcard/italia0.jpg" class="card-img-top h-50" alt="imagem italia">
+          <div class="card-body">
+            <a class="text-dark" href="">
+              <h5 class="card-title">Italia</h5>
+            </a>
+            <div style="display:flex ;"><img style="height:25px ;" src="../imagens/Principal/coracao-status.png"
+                alt="Imagem Coração">
+              <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+            </div>
+            <p class="card-text">De <s>R$150</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);"> -20%
+              </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                style="color:rgb(255, 77, 0);font-size: 30px;">120</strong></p>
+            <div style="display:flex;">
+              <p
+                style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                8.0</p>
+              <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+            </div>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../imagens/destino/imgcard/amsterda.jpg" class="card-img-top h-50" alt="imagem Amsterdã">
+          <div class="card-body">
+            <a class="text-dark" href="">
+              <h5 class="card-title">Amsterdã</h5>
+            </a>
+            <div style="display:flex ;"><img style="height:25px ;" src="../imagens/Principal/coracao-status.png"
+                alt="Imagem Coração">
+              <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+            </div>
+            <p class="card-text">De <s>R$150</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);"> -20%
+              </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                style="color:rgb(255, 77, 0);font-size: 30px;">120</strong></p>
+            <div style="display:flex;">
+              <p
+                style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                8.0</p>
+              <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+            </div>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------------------FIM DO CARDS DESTINO------------------------------------------------------------------->
+    </div>
+ 
+  </main>
+  <!-------------------------------------------------------FIM DO CONTEUDO PRINCIPAL------------------------------------------------------->
+  <!------------------------------------------------------------INICIO RODAPÉ--------------------------------------------------------------->
+  <footer role="container-fuid">
+    <div class="container-fuid mt-5"
+      style="display: flex; background-color:#0a1121; padding-top:5px; justify-content: space-around;">
+      <hr>
+      <p class="text-light"> Direitos autorais Tripcall © 2022 Todos os direitos reservados.</p>
+      <div>
+        <img style="height:25px ;" src="../imagens/Principal/imgfooter/facebook-icon.png" alt="Icon facebook ">
+        <img style="height:25px ;" src="../imagens/Principal/imgfooter/icon-Instagram-branca.png" alt="Icon Instagram ">
+        <img style="height:25px ;" src="../imagens/Principal/imgfooter/Logo_Twitter_branco.png" alt="Icon ">
+      </div>
+    </div>
+  </footer>
+  <!------------------------------------------------------------FIM RODAPÉ--------------------------------------------------------------->
+ 
+    
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</htm>
