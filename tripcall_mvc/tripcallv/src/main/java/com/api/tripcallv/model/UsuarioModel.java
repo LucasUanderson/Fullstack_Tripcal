@@ -1,7 +1,6 @@
 package com.api.tripcallv.model;
 
 import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,13 +10,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "TB_CLIENTES_CADASTRO")
-public class ClienteModel implements Serializable {
+public class UsuarioModel implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 	
 	@Column(nullable = false, length = 130) 
 	private String nome;
@@ -31,13 +30,11 @@ public class ClienteModel implements Serializable {
 	@Column(nullable = false, unique = true, length = 11) 
 	private String cpf;
 
-	
-	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -76,7 +73,11 @@ public class ClienteModel implements Serializable {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+	
+	
 
+	
+	
 	
 	
 
