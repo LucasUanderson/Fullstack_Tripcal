@@ -8,6 +8,8 @@ um sistema back-end para receber dados do front-end .
 - Back-end com Java 17 , Spring Boot, Persistência de Dados com Spring Data JPA, Validation, Lombok e Devtools 
 - Base de dados usando o padrão SQL relacional, atendendo as especificações do projeto.
 
+![Design sem nome](https://user-images.githubusercontent.com/104622435/214219030-f1bde1d3-1ca2-4080-ac3b-efe581853ce3.png)
+
 ## ✔️ Tecnologias utilizadas
 
 ### Back end
