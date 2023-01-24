@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" type="icon" href="Principal/favicon-16x16.png">
+  <style>
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <title>Tripcall</title>
+</head>
+
+<body>
+  <!----------------------------------------------------INICIO BARRA DE NAVEGAÇÃO-------------------------------------------------------->
+  <header role="banner">
+  <section>
+    <nav role="navigation" class="navbar navbar-expand-lg navbar-dark mb-4" style="background-color: #0a1121;">
+      <div class="container">
+        <a class="navbar-brand" href="http://localhost:8080/home"><img style="width: 90px;"
+            src="/Principal/img logo/logop.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://localhost:8080/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/destino">Destino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/promocao">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/login">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Procure sua viajem" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+  </header>
+  <!-------------------------------------------FIM DA BARRA DE NAVEGAÇÃO------------------------------------------------------------------->
+  <!-------------------------------------------INICIO CONTEUDO PRINCIPAL------------------------------------------------------------------->
+  <main style="background-color:#fff ;" role="main">
+    <div class="container">
+      <!------------------------------------------------INICIO BOTÕES DE BUSCA--------------------------------------------------------------------->
+      <section role="navigation">
+      <div style="display:flex; flex-wrap:wrap;">
+        <div class="btn-group" role="group" style="margin-right:5px;">
+          <button type="button" class="btn dropdown-toggle text-dark" data-bs-toggle="dropdown"
+            aria-expanded="false">Destinos</button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="#">Rio de janeiro</a></li>
+            <li><a class="dropdown-item" href="#">Estados Unidos</a></li>
+            <li>
+            <li><a class="dropdown-item" href="#">Fortaleza</a></li>
+            <li><a class="dropdown-item" href="#">Amsterdã</a></li>
+            <li><a class="dropdown-item" href="#">Italia</a></li>
+            <li><a class="dropdown-item" href="#">Peru</a></li>
+            <li><a class="dropdown-item" href="#">França</a></li>
+          </ul>
+        </div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Hoteis</button></a></div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Restaurantes</button></a>
+        </div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Pousadas</button></a>
+        </div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Forums de
+              viagem</button></a></div>
+        <div style="margin-right:5px;"><a href="#"><button type="button" class="btn text-dark">Aluguéis de
+              Temporada</button></a></div>
+      </div>
+    </section>
+      <!------------------------------------------------FIM BOTÕES DE BUSCA------------------------------------------------------------------>
+
+      <hr>
+      <!-----------------------------------------CARDPUBLICIDADDE--------------------------------------------------------------------------->
+      <div class="mt-5">
+        <div style="display:flex;">
+          <img style="width:50% ;" src="/Principal/imgprop/trip.png" alt="Propaganda">
+          <img style="width:50% ;" src="/Principal/imgprop/trip (1).png" alt="Propaganda">
+        </div>
+        <!-----------------------------------------FIMCARDPUBLICIDADDE------------------------------------------------------------------------>
+        <section>
+        <div class="mt-5 mb-3">
+          <h5>VIAGENS INTERNACIONAIS 🌍✈️</h5>
+        </div>
+        <!----------------------------------------------INICIO CARROSEL------------------------------------------------------------------------>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img style="height:450px ;" src="/Principal/img carrosel/paris2.jpg" class="d-block w-100"
+                alt="Imagem de Paris ">
+              <div style="color: white ;" class="carousel-caption d-none d-md-block">
+                <a class="text-light" href="#">
+                  <h1>FRANÇA</h1>
+                </a>
+                <p style="font-size:20px ;"> A partir de R$ <strong><u>2.156</u></strong></p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img style="height:450px ;" src="/Principal/img carrosel/italia2.jpg" class="d-block w-100"
+                alt="Imagem Italia">
+              <div style="color: white ;" class="carousel-caption d-none d-md-block">
+                <a class="text-light" href="#">
+                  <h1>ITALIA</h1>
+                </a>
+                <p style="font-size:20px ;"> A partir de R$ <strong><u>3.100</u></strong></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img style="height:450px ;" src="/Principal/img carrosel/vietnam.jpg" class="d-block w-100"
+                alt="Imagem Vietnam">
+              <div style="color: white ;" class="carousel-caption d-none d-md-block">
+                <a class="text-light" href="#">
+                  <h1>VIETNÃ</h1>
+                </a>
+                <p style="font-size:20px ;"> A partir de R$ <strong><u>4.356</u></strong></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Proximo</span>
+          </button>
+        </div>
+        </section>
+        <!------------------------------------------------------FIM CARROSEL------------------------------------------------------------------>
+        <section>
+        <div class="mt-5 mb-3 ">
+          <h5>VOOS COM ATÉ 50% DE DESCONTO 😎</h5>
+        </div>
+        <!---------------------------------------------INICIO DOS CARDS DESCONTOS-------------------------------------------------------------->
+        <div class="card-group">
+          <div class="card">
+            <img src="/Principal/img cards/rio de janeiro card 2.jpg" class="card-img-top h-50"
+              alt="Imagem Rio De janeiro RJ">
+            <div class="card-body">
+              <a class="text-dark" href="#">
+                <h5 class="card-title">Rio de Janeiro</h5>
+              </a>
+              <div style="display:flex ;"><img style="height:25px ;" src="/Principal/coracao-status.png"
+                  alt="Imagem Coração">
+                <p class="card-text fw-light" style="font-size:14px ;">50.624</p>
+              </div>
+              <p class="card-text">De <s>R$600</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);">
+                  -20%
+                </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                  style="color:rgb(255, 77, 0);font-size: 30px;">410</strong></p>
+              <div style="display:flex;">
+                <p
+                  style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                  8.0</p>
+                <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+              </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Principal/img cards/gramada card.jpg" class="card-img-top h-50" alt="Imagem de Fortaleza CE">
+            <div class="card-body">
+              <a class="text-dark" href="#">
+                <h5 class="card-title">Gramado</h5>
+              </a>
+              <div style="display:flex ;"><img style="height:25px ;" src="/Principal/coracao-status.png"
+                  alt="Imagem Coração">
+                <p class="card-text fw-light" style="font-size:14px ;">35.205</p>
+              </div>
+              <p class="card-text">De <s>R$900</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);">
+                  -20%
+                </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                  style="color:rgb(255, 77, 0);font-size: 30px;">720</strong></p>
+              <div style="display:flex;">
+                <p
+                  style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                  8.0</p>
+                <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+              </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Principal/img cards/fortaleza card.jpeg" class="card-img-top h-50" alt="Imagem de Gramado RS">
+            <div class="card-body">
+              <a class="text-dark" href="#">
+                <h5 class="card-title">Fortaleza</h5>
+              </a>
+              <div style="display:flex ;"><img style="height:25px ;" src="/Principal/coracao-status.png"
+                  alt="Imagem Coração">
+                <p class="card-text fw-light" style="font-size:14px ;">40.600</p>
+              </div>
+              <p class="card-text">De <s>R$500</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);">
+                  -20%
+                </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                  style="color:rgb(255, 77, 0);font-size: 30px;">300</strong></p>
+              <div style="display:flex;">
+                <p
+                  style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                  8.0</p>
+                <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+              </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        </section>
+        <!-------------------------------------------------------FIM DOS CARDS DESCONTOS---------------------------------------------------------->
+        <!-----------------------------------------CARDPUBLICIDADDE--------------------------------------------------------------------------->
+        <div class="card mb-5 mt-3" style="width: 100%; background-color:#a3eef8;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/Principal/imgprop/pessoas.jpg" style="height:100%" class="img-fluid rounded-start"
+                alt="Propaganda">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body mt-3" style="font-size:17px ;">
+                <h4 class="card-title">PROMOÇÕES TRIPCALL
+                </h4>
+                <p class="card-text">Volte a sonhar com a sua próxima viagem. Encontre reservas flexíveis e os melhores
+                  preços para voos e pacotes. Pacotes incríveis te esperam
+                  Opções perfeitas para você economizar!</p>
+                <a href="http://127.0.0.1:5500/promocao.html"><button type="button" class="btn btn text-light"
+                    style="background-color:#0a1121;">Promoções</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----------------------------------------FIMCARDPUBLICIDADDE--------------------------------------------------------------------------->
+        <section>
+        <div class="mt-5 mb-3">
+          <h5>#3 MELHORES HOTEIS BRASIL 😍</h5>
+        </div>
+        <!-------------------------------------------------------INICIO DOS CARDS HOTEIS---------------------------------------------------------->
+        <div class="card-group ">
+          <div class="card">
+            <img src="/Principal/hoteis/hotel-colline-de-france2.jpg" class="card-img-top h-50"
+              alt="Imagem hotel colline de france">
+            <div class="card-body">
+              <a class="text-dark" href="#">
+                <h5 class="card-title">Colline de France, em Gramado</h5>
+              </a>
+              <div style="display:flex ;"><img style="height:25px ;" src="/Principal/coracao-status.png"
+                  alt="Imagem Coração">
+                <p class="card-text fw-light" style="font-size:14px ;">18.102</p>
+              </div>
+              <p><small>Hotel ⭐⭐⭐⭐⭐</small></p>
+              <p class="card-text">De <s>R$900</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);">
+                  -20%
+                </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                  style="color:rgb(255, 77, 0);font-size: 30px;">720</strong></p>
+              <div style="display:flex;">
+                <p
+                  style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                  8.0</p>
+                <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+              </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Principal/hoteis/pousada-apple-house-paraty.jpg" class="card-img-top  h-50"
+              alt="Imagem pousada apple house paraty">
+            <div class="card-body">
+              <a class="text-dark" href="#">
+                <h5 class="card-title">Pousada Apple House Paraty</h5>
+              </a>
+              <div style="display:flex ;"><img style="height:25px ;" src="/Principal/coracao-status.png"
+                  alt="Imagem Coração">
+                <p class="card-text fw-light" style="font-size:14px ;">13.892</p>
+              </div>
+              <p><small>Hotel ⭐⭐⭐⭐⭐</small></p>
+              <p class="card-text">De <s>R$900</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);">
+                  -20%
+                </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                  style="color:rgb(255, 77, 0);font-size: 30px;">720</strong></p>
+              <div style="display:flex;">
+                <p
+                  style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                  8.0</p>
+                <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+              </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Principal/hoteis/wish-resort.jpg" class="card-img-top h-50" alt="Imagem wish resort">
+            <div class="card-body">
+              <a class="text-dark" href="#">
+                <h5 class="card-title">Wish Foz do Iguaçu</h5>
+              </a>
+              <div style="display:flex ;"><img style="height:25px ;" src="/Principal/coracao-status.png"
+                  alt="Imagem Coração">
+                <p class="card-text fw-light" style="font-size:14px ;">11.050</p>
+              </div>
+              <p><small>Hotel ⭐⭐⭐⭐</small></p>
+              <p class="card-text">De <s>R$900</s> por <strong style="color:#fff; background-color:rgb(255, 77, 0);">
+                  -20%
+                </strong><br><small style="color:rgb(255, 77, 0);">R$</small> <strong
+                  style="color:rgb(255, 77, 0);font-size: 30px;">720</strong></p>
+              <div style="display:flex;">
+                <p
+                  style="color:#ffff; background-color:rgb(19, 104, 19); border-radius:80px; margin:0; width:34px; height:23px; text-align: center;">
+                  8.0</p>
+                <p style="margin-left:10px;"><strong>Exelelente</strong> (94 avaliações)</p>
+              </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-------------------------------------------------------FIM DOS CARDS HOTEIS---------------------------------------------------------->
+  </main>
+  <!-------------------------------------------------------FIM DO CONTEUDO PRINCIPAL------------------------------------------------------->
+  <!------------------------------------------------------------INICIO RODAPÉ--------------------------------------------------------------->
+  <footer role="contentinfo">
+  <section>
+    <div class="container-fuid mt-5"
+      style="display: flex; background-color:#0a1121; padding-top:5px; justify-content: space-around;">
+      <hr>
+      <p class="text-light"> Direitos autorais Tripcall © 2022 Todos os direitos reservados.</p>
+      <div>
+        <a href="#"><img style="height:25px ;" src="/Principal/imgfooter/facebook-icon.png" alt="Icon facebook "></a>
+        <a href="#"><img style="height:25px ;" src="/Principal/imgfooter/icon-Instagram-branca.png"
+            alt="Icon Instagram "></a>
+        <a href="#"><img style="height:25px ;" src="/Principal/imgfooter/Logo_Twitter_branco.png"
+            alt="Icon twitter "></a>
+      </div>
+    </div>
+  </section>
+  </footer>
+  <!------------------------------------------------------------FIM RODAPÉ--------------------------------------------------------------->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

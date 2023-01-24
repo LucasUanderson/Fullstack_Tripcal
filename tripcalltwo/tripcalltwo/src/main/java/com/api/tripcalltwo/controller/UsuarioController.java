@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.api.tripcalltwo.Entity.UsuarioEntity;
-import com.api.tripcalltwo.service.UsuarioService;
+import com.api.tripcalltwo.service.UsuarioServiceImpl;
 
 import jakarta.validation.Valid;
 
@@ -32,9 +32,9 @@ public class UsuarioController {
 	
 	
 	
-	private UsuarioService usuarioService;
+	private final UsuarioServiceImpl usuarioService;
 	
-	public UsuarioController(UsuarioService usuarioService) {
+	public UsuarioController(UsuarioServiceImpl usuarioService) {
 		this.usuarioService = usuarioService;
 	}
 		
@@ -44,32 +44,22 @@ public class UsuarioController {
 	    return ResponseEntity.status(HttpStatus.OK).body(usuarioService.listaUsuarios());
 	}
 	
-	@PostMapping
+	@PostMapping("/cadastrar")
 	public ResponseEntity<UsuarioEntity> criarUsuario(@Valid @RequestBody UsuarioEntity usuarioEntity){
 		return ResponseEntity.status(HttpStatus.CREATED).body(usuarioService.saveUsuario(usuarioEntity));
 	}
 	
-	@PutMapping
-	public ResponseEntity<UsuarioEntity> editarrUsuario(@Valid @RequestBody UsuarioEntity usuarioEntity){
-		return ResponseEntity.status(HttpStatus.OK).body(usuarioService.updateUsuario(usuarioEntity));
+	@PutMapping("/editar")
+	public ResponseEntity<UsuarioEntity> editarrUsuario(@PathVariable Long id, @Valid @RequestBody UsuarioEntity usuarioEntity){
+		return ResponseEntity.status(HttpStatus.OK).body(usuarioService.saveUsuario(usuarioEntity));
 	}
 	
 	@DeleteMapping("/{id}")
-	public ResponseEntity<?> excluirUsuario(@PathVariable Long id){
+	public ResponseEntity<UsuarioEntity> excluirUsuario(@PathVariable Long id){
 		usuarioService.excluirUsuario(id);
 		return ResponseEntity.status(HttpStatus.OK).build();
 	}
-	
-	@PostMapping("/login")
-	public ResponseEntity<UsuarioEntity> validarSenha(@Valid @RequestBody UsuarioEntity usuarioEntity){
-		Boolean valid = usuarioService.validarSenha(usuarioEntity);
-		if(!valid) {
-			ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-		}
-		return ResponseEntity.status(HttpStatus.OK).build(); 
-	}
-	
-	
+		
 	
 	@ResponseStatus(HttpStatus.BAD_REQUEST)
 	@ExceptionHandler(MethodArgumentNotValidException.class)
@@ -84,7 +74,4 @@ public class UsuarioController {
 		
 		return errors;
 	}
-	
-
-
 }
