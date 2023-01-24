@@ -1,10 +1,43 @@
 # Site tripcall entrega recode API.REST🚀🍵🍃
 
-## - Ferramentas:
+## - Sobre 
 
-Java - Spring framework - MySql - HTML5 - CSS3 - Bootstrap 
+Foi um desafio da recodePro para consolidarmos o nosso aprendizado sobre Web api no qual o nosso objetivo fosse criar
+um sistema back-end para receber dados do front-end .
 
-### Código usando o Ecossistema Spring framework, com Front-end usando MVC.
+- Back-end com Java 17 , Spring Boot, Persistência de Dados com Spring Data JPA, Validation, Lombok e Devtools 
+- Base de dados usando o padrão SQL relacional, atendendo as especificações do projeto.
 
-- Back-end com Java Spring Boot, Spring MVC, Persistência de Dados com Spring Data JPA 
-- Base de dados usando o padrão SQL relacional, atendendo as especificações do projeto, usando o framework Spring Data e as Tecnologias da plataforma e linguagem Java,     aplicando ORM.
+## ✔️ Tecnologias utilizadas
+
+### Back end
+
+- Java 17
+ - Spring Boot
+ - JPA / Hibernate
+ - Maven
+ - Mysql
+ - lombok
+ - validation
+ - Thymeleaf
+
+### Front end
+
+- HTML5
+- CSS3
+- Bootstrap
+
+## 📁 Acesso ao projeto
+
+Você pode acessar o código fonte do projeto inicial ou baixá-lo.
+
+## 🛠️ Abrir e rodar o projeto
+
+Após baixar o projeto, você pode abrir com IDE Eclipse, Intellij ou a que tiver melhor experiencia. Para isso, na tela de launcher clique em:   
+
+- Open an Existing Project (ou alguma opção similar)
+- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
+- Por fim clique em Ok
+
+A IDE deve executar algumas tasks do Maven para configurar o projeto, aguarde até finalizar. Ao finalizar as tasks, você pode executar a API 🏆
+
